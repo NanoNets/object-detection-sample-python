@@ -6,6 +6,8 @@
 
 <h1 align="center">NanoNets Object Detection Python Sample</h1>
 
+** **
+
 ## Tracking the Millenium Falcon
 
 Images and annotations taken from - https://github.com/bourdakos1/Custom-Object-Detection
