@@ -1,12 +1,10 @@
-<h1 align="center">NanoNets Object Detection Python Sample</h1>
-
 <div align="center">
   <a href="https://nanonets.com/objectdetection/">
     <img src="https://nanonets.com/logo.png" alt="NanoNets Object Detection Python Sample" width="100"/>
     </a>
 </div>
 
-** **
+<h1 align="center">NanoNets Object Detection Python Sample</h1>
 
 ## Tracking the Millenium Falcon
 
