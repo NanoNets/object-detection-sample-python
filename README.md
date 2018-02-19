@@ -7,8 +7,6 @@
 </div>
 
 
-# Code Samples for Object Detection Project Written in Python
-
 Images and annotations taken from - https://github.com/bourdakos1/Custom-Object-Detection
 
 Images consists of frames taken from a clip from Star Wars: The Force Awakens.
@@ -76,7 +74,7 @@ python ./code/prediction.py PATH_TO_YOUR_IMAGE.jpg
 
 **Sample Usage:**
 ```bash
-./prediction ./images/videoplayback0051.jpg
+python ./code/prediction.py ./images/videoplayback0051.jpg
 ```
 
 
