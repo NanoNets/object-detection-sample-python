@@ -6,6 +6,7 @@
     </a>
 </div>
 
+** **
 
 Images and annotations taken from - https://github.com/bourdakos1/Custom-Object-Detection
 
