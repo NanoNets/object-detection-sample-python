@@ -30,7 +30,6 @@ Annotations are present for each frame and have the same name as the image name.
  
 ### Step 1: Clone the Repo
 ```bash
-cd $GOPATH/src
 git clone https://github.com/NanoNets/object-detection-sample-python.git
 cd object-detection-sample-python
 ```
