@@ -26,12 +26,15 @@ Annotations are present for each frame and have the same name as the image name.
 
 # Build an Object Detector for the Millenium Falcon
 
->**Note:** Make sure you have python installed on your system if you don't visit https://www.python.org/downloads/release/python-2714/
+>**Note:** Make sure you have python and pip installed on your system if you don't visit
+[Python](https://www.python.org/downloads/release/python-2714/)
+[pip](https://pip.pypa.io/en/stable/installing/)
  
 ### Step 1: Clone the Repo
 ```bash
 git clone https://github.com/NanoNets/object-detection-sample-python.git
 cd object-detection-sample-python
+sudo pip install requests
 ```
 
 ### Step 2: Get your free API Key
