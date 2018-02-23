@@ -55,7 +55,7 @@ export NANONETS_MODEL_ID=YOUR_MODEL_ID
  >_**Note:** you will get YOUR_MODEL_ID from the previous step
 
 ### Step 6: Upload the Training Data
-The training data is found in images (image files) and annotations (annotations for the files)
+The training data is found in ```images``` (image files) and ```annotations``` (annotations for the image files)
 ```bash
 python ./code/upload-training.py
 ```
