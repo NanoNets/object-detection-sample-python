@@ -19,19 +19,22 @@ Images and annotations taken from - https://github.com/bourdakos1/Custom-Object-
 Images consists of frames taken from a clip from Star Wars: The Force Awakens.
 [![Watch the video](https://github.com/bourdakos1/Custom-Object-Detection/raw/master/screenshots/starwars_small.gif)](https://www.youtube.com/watch?v=xW2hpkoaIiM)
 
-Annotations are present for each frame and have the same name as the image name. You can find the example to train a model in python and node, by updating the api-key and model id in corresponding file. There is also a pre-processed json annotations folder that are ready payload for nanonets api, the script used is node/xml-to-json.js .
+Annotations are present for each frame and have the same name as the image name. You can find the example to train a model in python and node, by updating the api-key and model id in corresponding file. There is also a pre-processed json annotations folder that are ready payload for nanonets api.
 
 
 ** **
 
 # Build an Object Detector for the Millenium Falcon
 
->**Note:** Make sure you have python installed on your system if you don't visit https://www.python.org/downloads/release/python-2714/
+>**Note:** Make sure you have python and pip installed on your system if you don't visit
+[Python](https://www.python.org/downloads/release/python-2714/)
+[pip](https://pip.pypa.io/en/stable/installing/)
  
 ### Step 1: Clone the Repo
 ```bash
 git clone https://github.com/NanoNets/object-detection-sample-python.git
 cd object-detection-sample-python
+sudo pip install requests
 ```
 
 ### Step 2: Get your free API Key
@@ -55,7 +58,7 @@ export NANONETS_MODEL_ID=YOUR_MODEL_ID
  >_**Note:** you will get YOUR_MODEL_ID from the previous step
 
 ### Step 6: Upload the Training Data
-The training data is found in images (image files) and annotations (annotations for the files)
+The training data is found in ```images``` (image files) and ```annotations``` (annotations for the image files)
 ```bash
 python ./code/upload-training.py
 ```
