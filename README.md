@@ -30,11 +30,11 @@ Annotations are present for each frame and have the same name as the image name.
 [Python](https://www.python.org/downloads/release/python-2714/)
 [pip](https://pip.pypa.io/en/stable/installing/)
  
-### Step 1: Clone the Repo
+### Step 1: Clone the Repo, Install dependencies
 ```bash
 git clone https://github.com/NanoNets/object-detection-sample-python.git
 cd object-detection-sample-python
-sudo pip install requests
+sudo pip install requests, tqdm
 ```
 
 ### Step 2: Get your free API Key
