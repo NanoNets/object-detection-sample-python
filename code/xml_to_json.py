@@ -3,6 +3,7 @@ import json
 from xmljson import parker
 from xml.etree.ElementTree import fromstring
 import argparse
+from tqdm import tqdm
 
 def keep_keys(old_dict):
   new_dict = {}
@@ -20,6 +21,7 @@ parser.print_help()
 print "\n"
 
 args = vars(parser.parse_args())
+print args
 
 input_directory = args["xml"]
 output_directory = args["json"]
@@ -29,11 +31,18 @@ if not os.path.exists(output_directory):
 
 all_input_files = os.listdir(input_directory)
 xml_input_files = [file for file in all_input_files if file.endswith(".xml")]
-for xml_file in xml_input_files:
+for xml_file in tqdm(xml_input_files):
   f = open(os.path.join(input_directory, xml_file),"rb")
-  json_output = json.dumps(keep_keys(parker.data(fromstring(f.read()))))
+  json_dict = keep_keys(parker.data(fromstring(f.read())))
+  if not "object" in json_dict:
+    json_dict = {"object":{}}
+  json_output = json.dumps(json_dict["object"])
   f.close()
 
   f = open(os.path.join(output_directory, xml_file.replace(".xml",".json")),"wb")
+  if json_output[0]!='[':
+    json_output = '['+json_output+']'
   f.write(json_output)
   f.close()
+print "\n\n\n"
+print "Completed Parsing"
