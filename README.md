@@ -34,7 +34,7 @@ Annotations are present for each frame and have the same name as the image name.
 ```bash
 git clone https://github.com/NanoNets/object-detection-sample-python.git
 cd object-detection-sample-python
-sudo pip install requests, tqdm
+sudo pip install requests tqdm
 ```
 
 ### Step 2: Get your free API Key
