@@ -3,7 +3,7 @@ import requests, os, json
 url = "https://app.nanonets.com/api/v2/ObjectDetection/Model/"
 api_key = os.environ.get('NANONETS_API_KEY')
 
-payload = "{\"categories\" : [\"TieFighter\", \"MillenniumFalcon\"]}"
+payload = "{\"categories\" : [\"Tie_Fighter\", \"Millennium_Falcon\"]}"
 headers = {'Content-Type': "application/json",}
 
 response = requests.request("POST", url, headers=headers, auth=requests.auth.HTTPBasicAuth(api_key, ''), data=payload)
