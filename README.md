@@ -87,4 +87,4 @@ python ./code/prediction.py ./images/videoplayback0051.jpg
 ```
 
 
-*Note the python sample uses the comverted json instead of the xml payload for convenience purposes, hence it has no dependencies.*
+*Note the python sample uses the converted json instead of the xml payload for convenience purposes, hence it has no dependencies.*
