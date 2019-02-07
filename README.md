@@ -38,7 +38,7 @@ sudo pip install requests tqdm
 ```
 
 ### Step 2: Get your free API Key
-Get your free API Key from http://app.nanonets.com/user/api_key
+Get your free API Key from http://app.nanonets.com/#/keys
 
 ### Step 3: Set the API key as an Environment Variable
 ```bash
